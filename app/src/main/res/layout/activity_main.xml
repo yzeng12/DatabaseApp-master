@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.MainActivity"
+    tools:layout_editor_absoluteY="73dp">
+
+    <EditText
+        android:id="@+id/editTextTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="139dp"
+        android:ems="10"
+        android:hint="title"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextSubTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:hint="subtitle"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/editTextTitle"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTitle" />
+
+
+    <Button
+        android:id="@+id/buttonPut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="put"
+        android:onClick="clickHandler"
+        app:layout_constraintStart_toStartOf="@+id/editTextSubTitle"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSubTitle" />
+
+    <Button
+        android:id="@+id/buttonGet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="40dp"
+        android:onClick="clickHandler"
+        android:text="get"
+        app:layout_constraintEnd_toEndOf="@+id/editTextSubTitle"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSubTitle" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="54dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/buttonPut"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPut" />
+
+    <Button
+        android:id="@+id/buttonMvp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="clickHandler"
+        android:text="mvp"
+        tools:layout_editor_absoluteX="136dp"
+        tools:layout_editor_absoluteY="47dp" />
+
+</android.support.constraint.ConstraintLayout>
